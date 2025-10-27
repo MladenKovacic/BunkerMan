@@ -1,0 +1,14 @@
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/bin/Debug/net9.0/TheBunkerMan
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/bin/Debug/net9.0/TheBunkerMan.deps.json
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/bin/Debug/net9.0/TheBunkerMan.runtimeconfig.json
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/bin/Debug/net9.0/TheBunkerMan.dll
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/bin/Debug/net9.0/TheBunkerMan.pdb
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.AssemblyInfoInputs.cache
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.AssemblyInfo.cs
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.csproj.CoreCompileInputs.cache
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.dll
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/refint/TheBunkerMan.dll
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.pdb
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.genruntimeconfig.cache
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/ref/TheBunkerMan.dll
