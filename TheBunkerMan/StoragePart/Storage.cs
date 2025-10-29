@@ -1,68 +1,42 @@
-using TheBunkerMan.BunkerMan;
+
 using TheBunkerMan.FoodPart;
-using System.Collections.Generic;
 
 namespace TheBunkerMan.StoragePart
 {
     public class Storage
     {
-
-        //fields
-        private List<Food> foodList = new List<Food>();
         
-
-       // proper
-        public List<Food> FoodList
-        {
-            get
-            {
-                return foodList;
-            }
-
-            set
-            {
-                foodList = value;
-            }
-        }
-        //cunc
+       public List<Food> FoodList = new List<Food>();
+     
+        
         public Storage()
         {
             FoodList = new List<Food>();
         }
-        //methods
+
         public Food PickFood()
         {
-            
-            //foodList.RemoveAll(food => food == null);
-            // if (foodList.Count == 0)
-            // {
-            //     Console.WriteLine("No food found");
-            //     return null;
-            // }
-            return foodList[0];
+            FoodList.Add(FoodList[0]);
+            FoodList.RemoveAt(0);
+            return FoodList.First();
         }
          
-        public void StockFood(int numRations)
+        public void StockFood(double numRations)
          {
             Random rng = new Random();
-            string[] foodNames = {"Pizza", "Hamburger", "ColeSlaw", "Banana","Ägg","Kaviar","Macka"};
-            for (int i = 0; i < numRations; i++)
+            string[] foodNames = {"Pizza", "Hamburger", "ColeSlaw", "Banana","Ägg","Kaviar","Macka","Köttbullar","Pasta","Kött"};
+            for (double i = 0; i < numRations; i++)
             {
-                if (numRations > 0)
+                if (numRations >= 0)
                 {
-                    string name = foodNames[rng.Next(0, foodNames.Length -1)];
-                    double baseCalories = rng.Next(1500,2200);
-                    foodList.Add(new Food(name, baseCalories));
+                    string name = foodNames[rng.Next(0, foodNames.Length)];
+                    double baseCalories = rng.Next(300,2500);
+                    FoodList.Add(new Food(name, baseCalories));
                 }
-                else if (numRations == 0)
-                {
-                    break;
-                }
+            
             }
          } 
 
     }
-
-   
 }
 

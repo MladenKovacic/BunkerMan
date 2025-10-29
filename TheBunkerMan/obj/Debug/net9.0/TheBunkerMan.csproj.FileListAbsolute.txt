@@ -12,3 +12,4 @@
 /Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.pdb
 /Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.genruntimeconfig.cache
 /Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/ref/TheBunkerMan.dll
+/Users/mladen/RiderProjects/TheBunkerMan/TheBunkerMan/obj/Debug/net9.0/TheBunkerMan.sourcelink.json

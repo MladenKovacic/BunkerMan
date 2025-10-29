@@ -1,35 +1,26 @@
-
-using TheBunkerMan.StoragePart;
-using TheBunkerMan.BunkerMan;
-
 namespace TheBunkerMan.FoodPart
 {
     
     public class Food
     {
-        //fields
-        private double baseCalories;
-        private string name;
-
-// proper
         public double BaseCalories
         {
-            get { return baseCalories; }
-            set { baseCalories = value; }
+            get;
+            set;
         }
 
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get;
+            set;
         }
-   //cunc
+   
         public Food(string name, double baseCalories)
         {
-            this.Name = name;
-            this.BaseCalories = baseCalories;
+            Name = name;
+            BaseCalories = baseCalories;
         }
-        //methods
+        
         public double Eat()
         {
             Random random = new Random();
