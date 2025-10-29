@@ -38,33 +38,28 @@ public class Init
             for (int i = 0; i < numberOfDays; i++)
             {
                 
-                if (i <= storage.FoodList.Count -1)
-               
-                {
+                
                     var food = storage.PickFood();
 
                     double kcal = BunkerMan.EatFood(food);
+                    
+                        if (kcal >= 2000 )
+                        {
+                            Console.WriteLine(
+                                $"Day {i + 1}: Ate  | ({food.Name}) -> (base={food.BaseCalories}) -> (kcal={Math.Round(kcal)}) health change=+{Math.Round((kcal - 2000) / 200)} health={Math.Round(BunkerMan.Health)}");
+                        }
 
-                    if (kcal >= 2000)
-                    {
-                        Console.WriteLine(
-                            $"Day {i + 1}: Ate | ({storage.FoodList[i].Name}) -> (base={storage.FoodList[i].BaseCalories}) -> (kcal={Math.Round(kcal)}) health change=+{Math.Round((kcal - 2000) / 200)} health={Math.Round(BunkerMan.Health)}");
-                    }
-
-                    if (kcal < 2000)
-                    {
-                        Console.WriteLine(
-                            $"Day {i + 1}: Ate | ({storage.FoodList[i].Name}) -> (base={storage.FoodList[i].BaseCalories}) -> (kcal={Math.Round(kcal)}) health change={Math.Round((2000 - kcal) / 100)} health={Math.Round(BunkerMan.Health)}");
-                    }
-
-
-                }
-                else if (i > storage.FoodList.Count)
-                {
-                    BunkerMan.Health -= 20;
-                    Console.WriteLine(
-                        $"Day {i + 1}: No Food |                          -> kcal=0 health change = =-20  {BunkerMan.Health}  ");
-                }
+                        if (kcal <= 2000 && kcal >= 1)
+                        {
+                            Console.WriteLine(
+                                $"Day {i + 1}: Ate | ({food.Name}) -> (base={food.BaseCalories}) -> (kcal={Math.Round(kcal)}) health change=-{Math.Round((2000 - kcal) / 100)} health={Math.Round(BunkerMan.Health)}");
+                        }
+                    
+                        if (kcal == 0)
+                        {
+                            Console.WriteLine(
+                                $"Day {i + 1}: NoFood | ({food.Name}) -> (base={food.BaseCalories}) -> (kcal={Math.Round(kcal)}) health change=-{Math.Round((2000 - kcal) / 100)} health={Math.Round(BunkerMan.Health)}");
+                        }
 
                 if (i + 1 == numberOfDays)
                 {

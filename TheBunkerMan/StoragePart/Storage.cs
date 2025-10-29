@@ -1,6 +1,6 @@
 
 using TheBunkerMan.FoodPart;
-
+using TheBunkerMan.BunkerMan;
 namespace TheBunkerMan.StoragePart
 {
     public class Storage
@@ -16,9 +16,16 @@ namespace TheBunkerMan.StoragePart
 
         public Food PickFood()
         {
-            FoodList.Add(FoodList[0]);
+            if (FoodList.Count == 0)
+            {
+                var noFood = new Food("", 0);
+               return noFood;
+            }
+            Food food = FoodList[0];
             FoodList.RemoveAt(0);
-            return FoodList.First();
+            
+            return food ;
+            
         }
          
         public void StockFood(double numRations)
@@ -30,7 +37,7 @@ namespace TheBunkerMan.StoragePart
                 if (numRations >= 0)
                 {
                     string name = foodNames[rng.Next(0, foodNames.Length)];
-                    double baseCalories = rng.Next(300,2500);
+                    double baseCalories = rng.Next(1000,2500);
                     FoodList.Add(new Food(name, baseCalories));
                 }
             

@@ -24,8 +24,9 @@ namespace TheBunkerMan.BunkerMan
        }
        public double EatFood(Food food)
        {
-          
+
            double caloriesConsumed = food.Eat();
+           
            
            if (caloriesConsumed < 2000 )
            {   
@@ -40,8 +41,8 @@ namespace TheBunkerMan.BunkerMan
               Health += healthDifference;
             
            }
-
-           return caloriesConsumed;
+           
+           return caloriesConsumed > 0 ? caloriesConsumed : 0;
        }
 
        public bool IsAlive()
